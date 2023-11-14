@@ -1,0 +1,255 @@
+/* Style for the whole document */
+:root {
+    --white-font: #FFFFFF;
+    --black-font: #000000;
+    --color5: 0B1D51;
+    --color4: 797596;
+    --color3: A1869E;
+    --color2: BBADA0;
+    --color1: D1C6AD;
+    background-color: #303030;
+ 
+}
+
+/* Style for all content within all the web pages */
+/* Comment */
+.Statistics-container {
+    max-width: 72em;
+    margin: 0 auto;
+    font-family: Inter;
+    color: #a1c0d0;
+    text-align: center;
+}
+.Donations-container {
+    max-width: 72em;
+    margin: 0 auto;
+    font-family: Inter;
+    color: #a1c0d0;
+}
+.main-container {
+    max-width: 72em;
+    margin: 0 auto;
+    font-family: Inter;
+    color: #a1c0d0;
+}
+
+/* Style for all document Headings */
+.banner {
+
+    margin: 5mm;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:  4em;
+    text-align: center;
+}
+
+/* Style for all Introduction content */
+.Index-Info {
+
+}
+/* Style for all Introduction text */
+.Index-Paragraph {
+
+/* Can use #Index-P1/P2/P3/P4/P5 for the 5 different text lines*/
+}
+
+/* Style for Donate Now button */
+.Image-Links {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Style for all ABOUT content text */
+.About-Text {
+
+}
+/* Style for air alert content */
+.About-Air-Alerts-Card {
+
+}
+/* Style for Ukraine war content */
+.About-Ukraine-War-Card {
+
+}
+/* Style for current update content */
+.About-Current-Update-Card {
+
+}
+/* Style for Stories content */
+.About-Stories-Card {
+
+}
+/* Style for all donation content */
+.Donation-Card {
+
+}
+/* Style for all donation text */
+.Donation-Text {
+
+}
+/* Style for all donation links */
+.Donation-Button {
+
+}
+
+
+/* ALL grid based organizing of content*/
+/* Index Heading*/
+#Index-banner {
+    grid-area: IB;
+}
+/* Index Paragraph*/
+#Index-Info {
+    grid-area: II;
+}
+/* About Heading */
+#About-banner {
+    grid-area: AB;
+}
+/* About Air-Alerts Content*/
+#About-Air-Alerts-Card {
+    grid-area: AA;
+}
+/* About Ukraine War Content*/
+#About-Ukraine-War-Card {
+    grid-area: AU;
+}
+/* About Current Update Content*/
+#About-Current-Update-Card {
+    grid-area: AC;
+}
+/* Active Alerts Header*/
+#Active-Alerts-banner {
+    grid-area: AL;
+}
+/* Active Alerts Ukraine Map Image*/
+#Ukraine-Map {
+    grid-area: UM;
+}
+
+/* Donation Heading*/
+#Donation-banner {
+    grid-area: DB;
+}
+/* Come-Back-Alive_foundation Content*/
+#Come-Back-Alive-Foundation {
+    grid-area: CF;
+}
+/* United24 Content*/
+#United24 {
+    grid-area: UD;
+}
+/* AFUO-CYOA Content*/
+#AFUO-CYOA {
+    grid-area: AF;
+}
+
+/* Statistics heading*/
+#Statistics-Banner {
+    grid-area: SB;
+}
+#Statistics-Content {
+    grid-area: SC;
+}
+#War-Progress-Content {
+    grid-area: PC;
+}
+#War-Crimes-Content {
+    grid-area: CC;
+}
+
+
+
+/* Donation button grid area
+#Index-Donation-Button {
+    grid-area: DD
+}
+*/
+
+
+/* Use a flexible layout grid */
+.main-container {
+    display: grid;
+    column-gap: 1em;
+}
+
+.Statistics-container {
+    display: grid;
+    column-gap: 1em;
+}
+
+.Donations-container{
+    display: grid;
+    column-gap: 1em;
+}
+  
+.main-container {
+    grid-template:
+        "IB" minmax(8em, auto)
+        "II" minmax(8em, auto)
+        "AB" minmax(8em, auto)
+        "AA" minmax(8em, auto)
+        "AU" minmax(8em, auto)
+        "AC" minmax(8em, auto)
+        "AL" minmax(8em, auto)
+        "UM" minmax(8em, auto)
+}
+
+.Statistics-container {
+    grid-template:
+        "SB" minmax(8em, auto)
+        "SC" minmax(8em, auto)
+        "PC" minmax(8em, auto)
+        "CC" minmax(8em, auto)
+}
+.Donations-container {
+    grid-template:
+        "DB" minmax(8em, auto)
+        "CF" minmax(8em, auto)
+        "UD" minmax(8em, auto)
+        "AF" minmax(8em, auto)
+}
+
+
+
+
+
+/* Add a black background color to the top navigation bar */
+.Navigation {
+    overflow: hidden;
+    background-color: #e9e9e9;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .Navigation a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 21px 24px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  /* Change the color of links on hover */
+  .Navigation a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the "active" element to highlight the current page */
+  .Navigation a.active {
+    background-color: #2196F3;
+    color: white;
+  }
+
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+  @media screen and (max-width: 600px) {
+    .Navigationv a, .Navigation input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+  }
