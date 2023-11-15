@@ -90,6 +90,9 @@
 .Donation-Button {
 
 }
+.Alerts-Text {
+    text-align: center;
+}
 
 
 /* ALL grid based organizing of content*/
@@ -121,6 +124,11 @@
 #Active-Alerts-banner {
     grid-area: AL;
 }
+/* Active Alerts Text*/
+#Active-Alerts-Text {
+    grid-area: AT;
+}
+
 /* Active Alerts Ukraine Map Image*/
 #Ukraine-Map {
     grid-area: UM;
@@ -191,6 +199,7 @@
         "AU" minmax(8em, auto)
         "AC" minmax(8em, auto)
         "AL" minmax(8em, auto)
+        "AT" minmax(8em, auto)
         "UM" minmax(8em, auto)
 }
 
