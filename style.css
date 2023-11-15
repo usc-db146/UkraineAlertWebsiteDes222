@@ -164,14 +164,19 @@
 #War-Crimes-Content {
     grid-area: CC;
 }
-
-
-
-/* Donation button grid area
+/* Donation button grid area */
 #Index-Donation-Button {
-    grid-area: DD
+    grid-area: ID;
 }
-*/
+
+#Copyright_Disclaimer {
+    text-align: center;
+    grid-area: CD;
+}
+
+
+
+
 
 
 /* Use a flexible layout grid */
@@ -200,7 +205,8 @@
         "AC" minmax(8em, auto)
         "AL" minmax(8em, auto)
         "AT" minmax(8em, auto)
-        "UM" minmax(8em, auto)
+        "UM" minmax(12em, auto)
+        "CD" minmax(8em, auto)
 }
 
 .Statistics-container {
@@ -209,6 +215,8 @@
         "SC" minmax(8em, auto)
         "PC" minmax(8em, auto)
         "CC" minmax(8em, auto)
+        "ID" minmax(10em, auto)
+        "CD" minmax(8em, auto)
 }
 .Donations-container {
     grid-template:
@@ -216,6 +224,7 @@
         "CF" minmax(8em, auto)
         "UD" minmax(8em, auto)
         "AF" minmax(8em, auto)
+        "CD" minmax(8em, auto)
 }
 
 
@@ -249,4 +258,16 @@
   .Navigation a.active {
     background-color: #2196F3;
     color: white;
+  }
+
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+  @media screen and (max-width: 600px) {
+    .Navigationv a, .Navigation input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
   }
